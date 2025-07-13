@@ -1,0 +1,11 @@
+a=[3,-3,4,2,3,-10]
+n=len(a)
+sum=0
+max=0
+for i in range(n):
+    sum=sum+a[i]
+    if(sum<0):
+        sum=0
+    elif(sum>max):
+        max=sum
+print(f"the maximum sum of the sub array in the given array is {max}")
